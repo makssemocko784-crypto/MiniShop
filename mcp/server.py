@@ -62,25 +62,8 @@ async def ingest_note(name: str, content: str) -> str:
     if exists and note_path.read_bytes() == data:
         return "unchanged"
 
-    def git(*args: str) -> subprocess.CompletedProcess:
-        return subprocess.run(
-            ["git", "-C", str(repo_dir), *args],
-            check=True,
-            capture_output=True,
-            text=True,
-        )
-
-    git_root = Path(
-    (await asyncio.to_thread(git, "rev-parse", "--show-toplevel")).stdout.strip()).resolve()
-    if git_root != repo_dir:
-        raise ValueError("MiniShop-KB must be the Git repository root")
-
     decisions_dir.mkdir(parents=True, exist_ok=True)
     note_path.write_bytes(data)
-    relative_path = note_path.relative_to(repo_dir).as_posix()
-    await asyncio.to_thread(git, "add", "--", relative_path)
-    await asyncio.to_thread(git, "commit", "--only", "-m", f"Ingest note: {name}", "--", relative_path)
-    await asyncio.to_thread(git, "push")
     return "updated" if exists else "created"
 
 
