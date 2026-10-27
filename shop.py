@@ -13,6 +13,12 @@ def add_product(products, name, quantity):
     return products + [product]
 
 
+def filter_products(products, status):
+    if status not in ("Не придбано", "Придбано"):
+        raise ValueError("Статус має бути «Не придбано» або «Придбано».")
+    return [product for product in products if product["status"] == status]
+
+
 def show_products(products):
     if not products:
         print("Список покупок порожній.")

@@ -1,4 +1,4 @@
-from shop import add_product, show_products
+from shop import add_product, filter_products, show_products
 from storage import load_products, save_products
 
 
@@ -12,7 +12,10 @@ def main():
         can_save = False
 
     while True:
-        print("\n1. Додати товар\n2. Переглянути товари\n3. Завантажити список\n0. Вийти")
+        print(
+            "\n1. Додати товар\n2. Переглянути товари\n3. Завантажити список"
+            "\n4. Фільтрувати товари за статусом\n0. Вийти"
+        )
         try:
             choice = input("Оберіть дію: ").strip()
             if choice == "0":
@@ -42,6 +45,13 @@ def main():
                 products = loaded_products
                 can_save = True
                 print("Список завантажено.")
+            elif choice == "4":
+                status = input("Статус (Не придбано / Придбано): ").strip()
+                filtered_products = filter_products(products, status)
+                if filtered_products:
+                    show_products(filtered_products)
+                else:
+                    print("Товарів із вибраним статусом немає.")
             else:
                 print("Невідома команда.")
         except (OSError, ValueError) as error:
