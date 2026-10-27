@@ -1,4 +1,4 @@
-# Практична робота №4 — перевірка guardrails
+# Перевірка guardrails
 
 Основа: `docs/guardrails.md`, `.codex/hooks.json` та `hooks/check_git.py`.
 

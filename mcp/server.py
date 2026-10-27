@@ -58,8 +58,4 @@ async def ingest_note(name: str, content: str) -> str:
 
 
 if __name__ == "__main__":
-    # Initialize native NumPy/Torch libraries before MCP starts stdio reader threads.
-    # Importing them for the first time inside a request can deadlock on Windows.
-    import sentence_transformers
-
     mcp.run(transport="stdio")
