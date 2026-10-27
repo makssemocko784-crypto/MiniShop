@@ -1,0 +1,402 @@
+[
+  {
+    "query": "Як у MiniShop зберігаються дані?",
+    "results": [
+      {
+        "name": "DataStorage",
+        "path": "Components/DataStorage.md",
+        "heading": "Збереження даних (Data Storage)",
+        "content": "# Збереження даних (Data Storage)\n\nDataStorage — компонент MiniShop, відповідальний за збереження та завантаження списку покупок у локальному JSON-файлі.",
+        "score": "0.732141"
+      },
+      {
+        "name": "MiniShop-MOC",
+        "path": "MiniShop-MOC.md",
+        "heading": "MiniShop — Map of Content",
+        "content": "# MiniShop — Map of Content\n\nЦентральна навігаційна нотатка бази знань MiniShop. Об'єднує основні поняття, програмні компоненти, архітектурні рішення та термінологію проєкту.",
+        "score": "0.644802"
+      },
+      {
+        "name": "Product",
+        "path": "Concepts/Product.md",
+        "heading": "Товар (Product)",
+        "content": "# Товар (Product)\n\nТовар — основна сутність застосунку MiniShop, що представляє одну позицію у списку покупок.",
+        "score": "0.610271"
+      },
+      {
+        "name": "JSONStorage",
+        "path": "Decisions/JSONStorage.md",
+        "heading": "Контекст",
+        "content": "## Контекст\n\nЗастосунок MiniShop потребує локального збереження списку покупок між запусками програми.",
+        "score": "0.592193"
+      },
+      {
+        "name": "Ontology",
+        "path": "Ontology.md",
+        "heading": "Онтологія MiniShop",
+        "content": "# Онтологія MiniShop",
+        "score": "0.580523"
+      }
+    ]
+  },
+  {
+    "query": "Який компонент відповідає за додавання товарів?",
+    "results": [
+      {
+        "name": "PurchaseStatus",
+        "path": "Concepts/PurchaseStatus.md",
+        "heading": "Можливі значення",
+        "content": "## Можливі значення\n\n- **Не придбано** — товар запланований для покупки.\n    \n- **Придбано** — товар уже куплений.",
+        "score": "0.533662"
+      },
+      {
+        "name": "ShoppingList",
+        "path": "Concepts/ShoppingList.md",
+        "heading": "Основні операції",
+        "content": "## Основні операції\n\n- Додавання товарів.\n    \n- Перегляд списку.\n    \n- Зміна статусу покупки.\n    \n- Видалення товарів.\n    \n- Фільтрація за статусом.",
+        "score": "0.520033"
+      },
+      {
+        "name": "MiniShop-MOC",
+        "path": "MiniShop-MOC.md",
+        "heading": "Concepts — Основні поняття",
+        "content": "## Concepts — Основні поняття\n\n- [[Product]] — товар та його атрибути.\n    \n- [[ShoppingList]] — список покупок.\n    \n- [[PurchaseStatus]] — статус придбання товару.",
+        "score": "0.451647"
+      },
+      {
+        "name": "MiniShop-MOC",
+        "path": "MiniShop-MOC.md",
+        "heading": "Components — Компоненти застосунку",
+        "content": "## Components — Компоненти застосунку\n\n- [[CLI]] — консольний інтерфейс.\n    \n- [[ShopLogic]] — бізнес-логіка застосунку.\n    \n- [[DataStorage]] — збереження та завантаження даних.",
+        "score": "0.439594"
+      },
+      {
+        "name": "FR07Implementation",
+        "path": "Decisions/FR07Implementation.md",
+        "heading": "FR-07: фільтрація товарів за статусом",
+        "content": "# FR-07: фільтрація товарів за статусом",
+        "score": "0.436614"
+      }
+    ]
+  },
+  {
+    "query": "Чому для MiniShop обрано консольний інтерфейс?",
+    "results": [
+      {
+        "name": "MiniShop-MOC",
+        "path": "MiniShop-MOC.md",
+        "heading": "MiniShop — Map of Content",
+        "content": "# MiniShop — Map of Content\n\nЦентральна навігаційна нотатка бази знань MiniShop. Об'єднує основні поняття, програмні компоненти, архітектурні рішення та термінологію проєкту.",
+        "score": "0.678676"
+      },
+      {
+        "name": "Ontology",
+        "path": "Ontology.md",
+        "heading": "Онтологія MiniShop",
+        "content": "# Онтологія MiniShop",
+        "score": "0.646834"
+      },
+      {
+        "name": "Product",
+        "path": "Concepts/Product.md",
+        "heading": "Товар (Product)",
+        "content": "# Товар (Product)\n\nТовар — основна сутність застосунку MiniShop, що представляє одну позицію у списку покупок.",
+        "score": "0.611810"
+      },
+      {
+        "name": "CLIArchitecture",
+        "path": "Decisions/CLIArchitecture.md",
+        "heading": "Контекст",
+        "content": "## Контекст\n\nMiniShop розробляється як невеликий навчальний застосунок для демонстрації процесів розробки програмного забезпечення за допомогою AI-агента.",
+        "score": "0.593423"
+      },
+      {
+        "name": "Product",
+        "path": "Concepts/Product.md",
+        "heading": "",
+        "content": "---\n\ntype: concept  \ncreated: 2026-10-26  \ntags:\n\n- minishop\n    \n- concept\n    \n\n---",
+        "score": "0.585540"
+      }
+    ]
+  },
+  {
+    "query": "Які статуси може мати товар?",
+    "results": [
+      {
+        "name": "FR07Implementation",
+        "path": "Decisions/FR07Implementation.md",
+        "heading": "FR-07: фільтрація товарів за статусом",
+        "content": "# FR-07: фільтрація товарів за статусом",
+        "score": "0.634131"
+      },
+      {
+        "name": "ShoppingList",
+        "path": "Concepts/ShoppingList.md",
+        "heading": "Основні операції",
+        "content": "## Основні операції\n\n- Додавання товарів.\n    \n- Перегляд списку.\n    \n- Зміна статусу покупки.\n    \n- Видалення товарів.\n    \n- Фільтрація за статусом.",
+        "score": "0.506678"
+      },
+      {
+        "name": "PurchaseStatus",
+        "path": "Concepts/PurchaseStatus.md",
+        "heading": "Статус покупки (Purchase Status)",
+        "content": "# Статус покупки (Purchase Status)\n\nСтатус покупки — характеристика товару, яка визначає, чи був він придбаний користувачем.",
+        "score": "0.502566"
+      },
+      {
+        "name": "MiniShop-MOC",
+        "path": "MiniShop-MOC.md",
+        "heading": "Concepts — Основні поняття",
+        "content": "## Concepts — Основні поняття\n\n- [[Product]] — товар та його атрибути.\n    \n- [[ShoppingList]] — список покупок.\n    \n- [[PurchaseStatus]] — статус придбання товару.",
+        "score": "0.486306"
+      },
+      {
+        "name": "PurchaseStatus",
+        "path": "Concepts/PurchaseStatus.md",
+        "heading": "Можливі значення",
+        "content": "## Можливі значення\n\n- **Не придбано** — товар запланований для покупки.\n    \n- **Придбано** — товар уже куплений.",
+        "score": "0.482372"
+      }
+    ]
+  },
+  {
+    "query": "Як відбувається перевірка правильності кількості товару?",
+    "results": [
+      {
+        "name": "FR07Implementation",
+        "path": "Decisions/FR07Implementation.md",
+        "heading": "FR-07: фільтрація товарів за статусом",
+        "content": "# FR-07: фільтрація товарів за статусом",
+        "score": "0.574468"
+      },
+      {
+        "name": "FR07Implementation",
+        "path": "Decisions/FR07Implementation.md",
+        "heading": "Фактичні зміни",
+        "content": ". Поточний список не підміняється, автозбереження не викликається. Помилка статусу обробляється без завершення роботи. - `tests/test_filter_products.py`: додано 20 pytest-перевірок FR-07 — обидва статуси, порядок і поля, порожній список, відсутність збігів, незмінність даних, некоректні статуси, консольний сценарій, відсутність збереження та додавання після фільтрації.",
+        "score": "0.488478"
+      },
+      {
+        "name": "PurchaseStatus",
+        "path": "Concepts/PurchaseStatus.md",
+        "heading": "Статус покупки (Purchase Status)",
+        "content": "# Статус покупки (Purchase Status)\n\nСтатус покупки — характеристика товару, яка визначає, чи був він придбаний користувачем.",
+        "score": "0.474994"
+      },
+      {
+        "name": "PurchaseStatus",
+        "path": "Concepts/PurchaseStatus.md",
+        "heading": "Можливі значення",
+        "content": "## Можливі значення\n\n- **Не придбано** — товар запланований для покупки.\n    \n- **Придбано** — товар уже куплений.",
+        "score": "0.463043"
+      },
+      {
+        "name": "ShoppingList",
+        "path": "Concepts/ShoppingList.md",
+        "heading": "Основні операції",
+        "content": "## Основні операції\n\n- Додавання товарів.\n    \n- Перегляд списку.\n    \n- Зміна статусу покупки.\n    \n- Видалення товарів.\n    \n- Фільтрація за статусом.",
+        "score": "0.413805"
+      }
+    ]
+  },
+  {
+    "query": "Який компонент відповідає за взаємодію з користувачем?",
+    "results": [
+      {
+        "name": "Ontology",
+        "path": "Ontology.md",
+        "heading": "Типи зв'язків",
+        "content": "## Типи зв'язків\n\n- depends_on — компонент залежить від іншого компонента.\n    \n- implements — компонент реалізує функціональність.\n    \n- uses — компонент використовує інший компонент.\n    \n- defined_by — компонент визначається архітектурним рішенням.",
+        "score": "0.548313"
+      },
+      {
+        "name": "CLIArchitecture",
+        "path": "Decisions/CLIArchitecture.md",
+        "heading": "Наслідки рішення",
+        "content": "## Наслідки рішення\n\nЗастосунок працюватиме через консоль. Для реалізації інтерфейсу, бізнес-логіки та збереження даних передбачено окремі компоненти.",
+        "score": "0.537955"
+      },
+      {
+        "name": "AgentHarness",
+        "path": "Glossary/AgentHarness.md",
+        "heading": "Зв'язки",
+        "content": "## Зв'язки\n\n- Agent Harness підтримує реалізацію [[FunctionalRequirements]].\n    \n- Контролює розробку компонента [[ShopLogic]].\n    \n- Використовує знання про архітектурні рішення [[CLIArchitecture]] та [[JSONStorage]].",
+        "score": "0.504107"
+      },
+      {
+        "name": "FunctionalRequirements",
+        "path": "Glossary/FunctionalRequirements.md",
+        "heading": "Зв'язки",
+        "content": "## Зв'язки\n\n- Вимоги визначають поведінку [[ShopLogic]].\n    \n- Операції виконуються над [[ShoppingList]].\n    \n- Взаємодія з користувачем забезпечується [[CLI]].\n    \n- Постійне збереження забезпечує [[DataStorage]].",
+        "score": "0.497519"
+      },
+      {
+        "name": "CLI",
+        "path": "Components/CLI.md",
+        "heading": "Архітектурні особливості",
+        "content": "## Архітектурні особливості\n\nCLI відповідає лише за взаємодію з користувачем. Обробка товарів і робота з файлами виконуються окремими компонентами.",
+        "score": "0.492473"
+      }
+    ]
+  },
+  {
+    "query": "Чому для збереження даних використовується JSON?",
+    "results": [
+      {
+        "name": "JSONStorage",
+        "path": "Decisions/JSONStorage.md",
+        "heading": "Використання JSON для збереження даних",
+        "content": "# Використання JSON для збереження даних",
+        "score": "0.848145"
+      },
+      {
+        "name": "JSONStorage",
+        "path": "Decisions/JSONStorage.md",
+        "heading": "Прийняте рішення",
+        "content": "## Прийняте рішення\n\nВикористовувати формат JSON для збереження даних у локальному файлі.",
+        "score": "0.698238"
+      },
+      {
+        "name": "DataStorage",
+        "path": "Components/DataStorage.md",
+        "heading": "Збереження даних (Data Storage)",
+        "content": "# Збереження даних (Data Storage)\n\nDataStorage — компонент MiniShop, відповідальний за збереження та завантаження списку покупок у локальному JSON-файлі.",
+        "score": "0.669523"
+      },
+      {
+        "name": "JSONStorage",
+        "path": "Decisions/JSONStorage.md",
+        "heading": "Наслідки рішення",
+        "content": "## Наслідки рішення\n\nЗастосунок використовуватиме один локальний JSON-файл. У разі збільшення обсягу даних може виникнути потреба в іншому способі збереження.",
+        "score": "0.663632"
+      },
+      {
+        "name": "DataStorage",
+        "path": "Components/DataStorage.md",
+        "heading": "Основні функції",
+        "content": "## Основні функції\n\n- Збереження поточного списку покупок у JSON.\n    \n- Завантаження раніше збережених товарів.\n    \n- Перевірка структури та коректності даних.\n    \n- Обробка помилок читання і запису.",
+        "score": "0.587646"
+      }
+    ]
+  },
+  {
+    "query": "Як реалізовано фільтрацію товарів за статусом?",
+    "results": [
+      {
+        "name": "FR07Implementation",
+        "path": "Decisions/FR07Implementation.md",
+        "heading": "FR-07: фільтрація товарів за статусом",
+        "content": "# FR-07: фільтрація товарів за статусом",
+        "score": "0.865837"
+      },
+      {
+        "name": "PurchaseStatus",
+        "path": "Concepts/PurchaseStatus.md",
+        "heading": "Статус покупки (Purchase Status)",
+        "content": "# Статус покупки (Purchase Status)\n\nСтатус покупки — характеристика товару, яка визначає, чи був він придбаний користувачем.",
+        "score": "0.578259"
+      },
+      {
+        "name": "FR07Implementation",
+        "path": "Decisions/FR07Implementation.md",
+        "heading": "Фактичні зміни",
+        "content": "## Фактичні зміни - `shop.py`: додано `filter_products(products, status)` для статусів «Не придбано» та «Придбано». Функція повертає новий список зі збереженням порядку товарів і всіх полів; вихідний список не змінює. Недопустимий статус відхиляється через `ValueError` з українським повідомленням. - `main.py`: додано пункт меню `4` для фільтрації. Збіги відображаються через `show_products`; за відсутності збігів виводиться повідомлення",
+        "score": "0.571891"
+      },
+      {
+        "name": "ShoppingList",
+        "path": "Concepts/ShoppingList.md",
+        "heading": "Основні операції",
+        "content": "## Основні операції\n\n- Додавання товарів.\n    \n- Перегляд списку.\n    \n- Зміна статусу покупки.\n    \n- Видалення товарів.\n    \n- Фільтрація за статусом.",
+        "score": "0.549579"
+      },
+      {
+        "name": "ShopLogic",
+        "path": "Components/ShopLogic.md",
+        "heading": "Основні функції",
+        "content": "## Основні функції\n\n- Додавання нового товару з унікальним ID.\n    \n- Перегляд усіх товарів.\n    \n- Зміна статусу покупки.\n    \n- Видалення товару за ID.\n    \n- Фільтрація товарів за статусом.",
+        "score": "0.508211"
+      }
+    ]
+  },
+  {
+    "query": "Для чого використовується Agent Harness?",
+    "results": [
+      {
+        "name": "AgentHarness",
+        "path": "Glossary/AgentHarness.md",
+        "heading": "Agent Harness",
+        "content": "# Agent Harness\n\nAgent Harness — інженерна інфраструктура, що забезпечує керовану, відтворювану та контрольовану роботу AI-агента під час розробки програмного застосунку.",
+        "score": "0.821794"
+      },
+      {
+        "name": "AgentHarness",
+        "path": "Glossary/AgentHarness.md",
+        "heading": "Зв'язки",
+        "content": "## Зв'язки\n\n- Agent Harness підтримує реалізацію [[FunctionalRequirements]].\n    \n- Контролює розробку компонента [[ShopLogic]].\n    \n- Використовує знання про архітектурні рішення [[CLIArchitecture]] та [[JSONStorage]].",
+        "score": "0.678037"
+      },
+      {
+        "name": "AgentHarness",
+        "path": "Glossary/AgentHarness.md",
+        "heading": "Призначення",
+        "content": "## Призначення\n\nУ проєкті MiniShop Agent Harness використовується для підтримки розробки за допомогою Codex у VS Code.",
+        "score": "0.589088"
+      },
+      {
+        "name": "MiniShop-MOC",
+        "path": "MiniShop-MOC.md",
+        "heading": "Glossary — Термінологія",
+        "content": "## Glossary — Термінологія\n\n- [[FunctionalRequirements]] — функціональні вимоги.\n    \n- [[AgentHarness]] — інфраструктура AI-агента.",
+        "score": "0.530624"
+      },
+      {
+        "name": "CLIArchitecture",
+        "path": "Decisions/CLIArchitecture.md",
+        "heading": "Обґрунтування",
+        "content": "## Обґрунтування\n\n- Простота реалізації та тестування.\n    \n- Відсутність потреби у графічних бібліотеках.\n    \n- Можливість зосередитися на Agent Harness.\n    \n- Зручність поступового додавання функцій.",
+        "score": "0.515273"
+      }
+    ]
+  },
+  {
+    "query": "Які правила обмежують небезпечні дії AI-агента?",
+    "results": [
+      {
+        "name": "MiniShop-MOC",
+        "path": "MiniShop-MOC.md",
+        "heading": "Glossary — Термінологія",
+        "content": "## Glossary — Термінологія\n\n- [[FunctionalRequirements]] — функціональні вимоги.\n    \n- [[AgentHarness]] — інфраструктура AI-агента.",
+        "score": "0.521861"
+      },
+      {
+        "name": "AgentHarness",
+        "path": "Glossary/AgentHarness.md",
+        "heading": "Agent Harness",
+        "content": "# Agent Harness\n\nAgent Harness — інженерна інфраструктура, що забезпечує керовану, відтворювану та контрольовану роботу AI-агента під час розробки програмного застосунку.",
+        "score": "0.499326"
+      },
+      {
+        "name": "AgentHarness",
+        "path": "Glossary/AgentHarness.md",
+        "heading": "Основні компоненти",
+        "content": "## Основні компоненти\n\n- Knowledge Layer — структурована база знань Obsidian.\n    \n- MCP — механізм доступу агента до зовнішніх інструментів і бази знань.\n    \n- Skills — формалізовані процедури виконання повторюваних задач.\n    \n- Guardrails — правила дозволених та заборонених дій агента.\n    \n- Hooks — механізми технічного контролю дій агента.\n    \n- Orchestration — координація роботи кількох агентних ролей.\n    \n- Evaluation — перевірка якості та надійності роботи агента.",
+        "score": "0.382001"
+      },
+      {
+        "name": "AgentHarness",
+        "path": "Glossary/AgentHarness.md",
+        "heading": "Зв'язки",
+        "content": "## Зв'язки\n\n- Agent Harness підтримує реалізацію [[FunctionalRequirements]].\n    \n- Контролює розробку компонента [[ShopLogic]].\n    \n- Використовує знання про архітектурні рішення [[CLIArchitecture]] та [[JSONStorage]].",
+        "score": "0.376346"
+      },
+      {
+        "name": "CLIArchitecture",
+        "path": "Decisions/CLIArchitecture.md",
+        "heading": "Обґрунтування",
+        "content": "## Обґрунтування\n\n- Простота реалізації та тестування.\n    \n- Відсутність потреби у графічних бібліотеках.\n    \n- Можливість зосередитися на Agent Harness.\n    \n- Зручність поступового додавання функцій.",
+        "score": "0.375135"
+      }
+    ]
+  }
+]

@@ -2,6 +2,7 @@ from pathlib import Path
 import re
 import subprocess
 import asyncio
+from rag import search_notes as semantic_search_notes
 
 try:
     from mcp.server.fastmcp import FastMCP
@@ -19,19 +20,8 @@ def ping() -> str:
 
 @mcp.tool()
 def search_notes(query: str) -> list[dict[str, str]]:
-    notes_dir = Path(r"C:\MiniShop-KB")
-    normalized_query = query.casefold()
-    results = []
-
-    for path in sorted(notes_dir.rglob("*")):
-        if path.is_file() and path.suffix.casefold() == ".md":
-            if normalized_query in path.read_text(encoding="utf-8").casefold():
-                results.append({
-                    "name": path.stem,
-                    "path": path.relative_to(notes_dir).as_posix(),
-                })
-
-    return results
+    """Semantic search returning name, path, content and cosine score for each fragment."""
+    return semantic_search_notes(query)
 
 
 @mcp.tool()
@@ -68,4 +58,8 @@ async def ingest_note(name: str, content: str) -> str:
 
 
 if __name__ == "__main__":
+    # Initialize native NumPy/Torch libraries before MCP starts stdio reader threads.
+    # Importing them for the first time inside a request can deadlock on Windows.
+    import sentence_transformers
+
     mcp.run(transport="stdio")
